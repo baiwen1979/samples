@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html> 
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="styles/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="styles/main.css">
+<script src="scripts/jquery.min.js"></script>
+<script type="text/javascript">
+// Need to bind to mobileinit before jQ mobile library is loaded
+$(document).bind('mobileinit',function() {
+    $.mobile.selectmenu.prototype.options.nativeMenu = false;
+});
+</script>
+<script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+<script src="scripts/cache-manager.js"></script>
+<title>The Tartanator</title> </head> 
+<body> 
+
+<div data-role="page" id="tartan-2345">
+  <style type="text/css">
+    #tartan-2345 { 
+      background-image: url('/samples/hfwebapp/tartans/images/2345-200.png'); 
+      min-height: 240px;
+    }
+  </style>
+	<div data-role="header" data-position="fixed">
+    <a href="../tartans.php" data-rel="back" data-direction="reverse" data-icon="back" />Back</a>
+		<h1>2345</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+    
+	</div><!-- /content -->
+	<div data-role="footer" data-position="fixed">
+		<h4>Bring forrit the tartan!</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>

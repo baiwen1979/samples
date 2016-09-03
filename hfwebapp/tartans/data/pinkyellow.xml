@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<tartan name="pinkyellow" stripe="2" scale="1">
+  <description>pink and yellow</description>
+  <stitches>
+    <stitch color="#65295f" count="2"/>
+    <stitch color="#ffec00" count="2"/>
+  </stitches>
+</tartan>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-hello" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Hello</name>
+    <js-module name="Hello" src="www/hello.js">
+        <clobbers target="hello" />
+    </js-module>
+
+    <platform name="android">
+    	<config-file target="res/xml/config.xml" parent="/*">
+        	<feature name="Hello">
+            	<param name="android-package" value="org.biwin.hello.Hello"/>
+        	</feature>
+    	</config-file>
+    	<source-file src="src/android/Hello.java" target-dir="src/org/biwin/hello" />
+	</platform>
+</plugin>

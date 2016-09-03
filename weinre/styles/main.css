@@ -1,0 +1,10 @@
+h1 {
+	color: red;
+}
+
+#box {
+	background-color: #FFC;
+	padding: 10px;
+	width: 70%;
+	height: 200px;
+}

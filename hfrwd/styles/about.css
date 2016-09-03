@@ -1,0 +1,188 @@
+/** color, typography and basic layout **/
+html {
+	background-color: #CCC;
+	padding: 0;
+}
+
+body {
+	margin: 0 auto;
+	background-color: #FFF;
+	font-family: "Adobe Caslon Pro", "Georgia", sans-serif, serif;
+	font-size: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #666;
+}
+
+div {
+	min-height: 100px;
+	background-color: #EEE;
+}
+
+body, .header, .nav, .footer {
+	width: 100%;
+}
+
+.nav ul {
+	list-style-type: none;
+	border-bottom: 2px solid darkred;
+	padding: 10px 1% 0px 1%;
+	margin: 0;
+	background-color: #EFEFEF;
+}
+
+.nav ul li {
+	text-align: center;
+	letter-spacing: normal;
+}
+
+.nav a {
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height: 50px;
+	display: block;
+	margin: 0;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+.nav a:hover, .nav a.active {
+	background-color: darkred;
+	color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0.5em 1em;
+	margin: 0;
+}
+
+h1 {
+	padding: 2em 0;
+	background-color: darkred;
+	color: white;
+	text-align: center;
+	font-size: 3em;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+h2:first-letter {
+	font-size: 3em;
+	vertical-align: middle;
+}
+
+.footer {
+	min-height: 25px;
+}
+
+.footer p {
+	text-align: center;
+	line-height: 3em;
+}
+
+.header {
+	background-color: #DDD;
+}
+
+/** common structure **/
+img, object {
+	max-width: 100%;
+}
+
+.header, .nav, .footer {
+	clear: both;
+}
+
+.header {
+	height: 140px;
+}
+
+.nav {
+	min-height: 25px;
+}
+
+.nav ul li {
+	display: inline-block;
+}
+
+#main div {
+	padding: 1%;
+}
+
+#main img {
+	padding: 5px 1%;
+	margin: 5px 0.5%;
+	border: 1px solid #BBB;
+	max-width: 97%; /* fluid scaling for image*/
+}
+
+/** desktop structure **/
+@media screen and (min-width: 481px) {
+
+	.column {
+		margin: 10px 1% 0 0;
+	}
+
+	.nav ul li {
+		width: 18.3333333%;
+	}
+
+	#visit {
+		width: 24%;
+		float: left;
+		margin-left: 1%;
+	}
+
+	#points {
+		width: 24%;
+		float: right;
+	}
+
+	#main {
+		margin: 10px 26% 0 26%;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	.header {
+		height: 100px;
+	}
+
+	.header h2 {
+		font-size: 1.2em;
+	}
+
+	.column {
+		margin: 1em 0;
+		border-bottom: 1px dashed darkred;
+	}
+
+	.nav ul {
+		padding: 10px 2.5% 0 2.5%;
+	}
+
+	.nav ul li {
+		width: 16.875%;	
+		position: relative;
+		top: 4px;
+	}
+
+	.nav ul li a {
+		overflow: hidden;
+		height: 64px;
+		line-height: 30px;
+		font-size: 0.4em;
+	}
+
+	#visit, #points, #main {
+		width: 100%;
+	}
+}
+
+

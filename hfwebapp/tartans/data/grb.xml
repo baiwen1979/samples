@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<tartan name="grb" stripe="2" scale="1">
+  <description>green&#xFF0C;red&#xFF0C;blue</description>
+  <stitches>
+    <stitch color="#008000" count="2"/>
+    <stitch color="#cc0000" count="2"/>
+    <stitch color="#274086" count="20"/>
+  </stitches>
+</tartan>

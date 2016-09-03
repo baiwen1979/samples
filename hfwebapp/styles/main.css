@@ -1,0 +1,26 @@
+
+#colorlist li {
+  cursor: pointer;
+  text-shadow: none;
+}
+
+#colorlist {
+  margin-top: 2em;
+}
+
+#colorlist li .ui-li {
+  border-top: 0;
+}
+
+.placeholder {
+  color: #999;
+}
+.ui-field-contain {
+  border: none;
+  padding: 0.5em;
+}
+
+.forrit { 
+  padding: .5em; 
+  text-align:center;
+}

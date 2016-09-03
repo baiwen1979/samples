@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<tartan name="2345" stripe="2" scale="1">
+  <stitches>
+    <stitch color="#cccccc" count="2"/>
+    <stitch color="#FFFFFF" count="4"/>
+    <stitch color="#666666" count="6"/>
+    <stitch color="#333333" count="4"/>
+  </stitches>
+</tartan>
